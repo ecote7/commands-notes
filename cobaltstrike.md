@@ -2,7 +2,6 @@
 OPSec:
 ```
 https://blog.cobaltstrike.com/2017/06/23/opsec-considerations-for-beacon-commands/
-
 ```
 Agressor Script functions (CNA):
 ```

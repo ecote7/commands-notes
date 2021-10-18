@@ -3,6 +3,10 @@ OPSec:
 ```
 https://blog.cobaltstrike.com/2017/06/23/opsec-considerations-for-beacon-commands/
 ```
+SANS DFIR Normal Parent process tree examples:
+```
+https://sansorg.egnyte.com/dl/ZkAyckjFTI
+```
 Agressor Script functions (CNA):
 ```
 https://www.cobaltstrike.com/aggressor-script/functions.html

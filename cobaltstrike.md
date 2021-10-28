@@ -2,6 +2,7 @@
 OPSec:
 ```
 https://blog.cobaltstrike.com/2017/06/23/opsec-considerations-for-beacon-commands/
+https://www.cobaltstrike.com/help-sleep-mask-kit
 ```
 SANS DFIR Normal Parent process tree examples:
 ```
@@ -11,13 +12,22 @@ Agressor Script functions (CNA):
 ```
 https://www.cobaltstrike.com/aggressor-script/functions.html
 ```
-Agressor Scripts examples:
+Agressor Scripts:
 ```
 https://github.com/harleyQu1nn/AggressorScripts
+https://github.com/harleyQu1nn/AggressorScripts/blob/master/ProcessColor.cna
 ```
-TrustedSec BOF:
+BOF:
 ```
 https://github.com/trustedsec/CS-Situational-Awareness-BOF
+https://github.com/ajpc500/BOFs
+https://cobalt-strike.github.io/community_kit/
+```
+User-Defined Reflective Loader:
+```
+https://github.com/mgeeky/ElusiveMice
+https://github.com/boku7/CobaltStrikeReflectiveLoader
+https://www.cobaltstrike.com/help-user-defined-reflective-loader
 ```
 Windows Error codes:
 ```
@@ -37,4 +47,8 @@ https://github.com/Flangvik/SharpCollection
 Universal UnHook (now flagged by the latest versions of some EDRs: kind of tamper protection):
 ```
 https://github.com/rsmudge/unhook-bof
+```
+Inline Execute-Assembly:
+```
+https://github.com/anthemtotheego/InlineExecute-Assembly
 ```

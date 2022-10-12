@@ -1,3 +1,8 @@
+## Commands
+Extract all Subnet and Sites from AD using TrustedSec's BOF "ldapsearch" :
+```
+ldapsearch (cn=*) cn,description 0 domain.local "CN=Subnets,CN=Sites,CN=Configuration,dc=domain,dc=local"
+```
 ## Useful links
 OPSec:
 ```

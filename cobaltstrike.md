@@ -3,6 +3,11 @@ Extract all Subnet and Sites from AD using TrustedSec's BOF "ldapsearch" :
 ```
 ldapsearch (cn=*) cn,description 0 domain.local "CN=Subnets,CN=Sites,CN=Configuration,dc=domain,dc=local"
 ```
+Search for all Pre-Created Computer accounts from AD using TrustedSec's BOF "ldapsearch" :
+Source : https://www.trustedsec.com/blog/diving-into-pre-created-computer-accounts/?utm_campaign=Targeted%20Operations
+```
+ldapsearch (&(userAccountControl=4128)(logonCount=0)) samaccountname 0 domain.local ""
+```
 ## Useful links
 OPSec:
 ```

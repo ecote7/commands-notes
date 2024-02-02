@@ -8,6 +8,10 @@ Source : https://www.trustedsec.com/blog/diving-into-pre-created-computer-accoun
 ```
 ldapsearch (&(userAccountControl=4128)(logonCount=0)) samaccountname 0 domain.local ""
 ```
+Search for all enabled Windows Server 2008 that their lastlogon is >= to '2024-02-02 07:37' (133513510232969784):
+```
+ldapsearch "(&(&(&(&(samAccountType=805306369)(!(primaryGroupId=516)))(objectCategory=computer)(operatingSystem=Windows Server 2008*)(!userAccountControl:1.2.840.113556.1.4.803:=2)(lastlogon>=133513510232969784))))" sAMAccountName,lastlogon
+```
 ## Useful links
 OPSec:
 ```

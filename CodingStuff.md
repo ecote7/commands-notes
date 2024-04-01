@@ -29,7 +29,7 @@ namespace MyService
 
         public Program()
         {
-            ServiceName = "vstsagent.LallemandEA.CrmAPI-Website.CrmAPI-Website-1";
+            ServiceName = "CoolServiceName";
         }
 
         protected override void OnStart(string[] args)

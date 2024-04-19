@@ -12,7 +12,7 @@ Search for all enabled Windows Server 2008 that their lastlogon is >= to '2024-0
 ```
 ldapsearch "(&(&(&(&(samAccountType=805306369)(!(primaryGroupId=516)))(objectCategory=computer)(operatingSystem=Windows Server 2008*)(!userAccountControl:1.2.840.113556.1.4.803:=2)(lastlogon>=133513510232969784))))" sAMAccountName,lastlogon
 ```
-Extracting ASR Rules
+Extracts ASR Rules - See (https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference?view=o365-worldwide#asr-rule-to-guid-matrix)
 ```
 reg_query HKLM "SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\ASR\Rules"
 ```

@@ -16,6 +16,10 @@ Extracts ASR Rules - See (https://learn.microsoft.com/en-us/microsoft-365/securi
 ```
 reg_query HKLM "SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\ASR\Rules"
 ```
+Locate SysMon configuration file loaded (default registry key)
+```
+reg_query HKLM "SYSTEM\CurrentControlSet\Services\SysmonDrv\Parameters" ConfigFile
+```
 ## Useful links
 OPSec:
 ```

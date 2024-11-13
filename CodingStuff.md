@@ -7,6 +7,10 @@ C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe /out:DLLNAME.dll /target:l
 ```
 ([system.reflection.assembly]::loadfile("C:\Full_Path\MyDLL.dll")).FullName
 ```
+## Retreive the Import Address Table (IAT) from a Windows executable under *Nix
+```
+objdump -x executable.exe | grep -A 20 'Import Table'
+```
 ## .Net exe-service
 ```
 using System;

@@ -23,7 +23,7 @@ reg_query HKLM "SYSTEM\CurrentControlSet\Services\SysmonDrv\Parameters" ConfigFi
 ## Useful links
 OPSec:
 ```
-https://blog.cobaltstrike.com/2017/06/23/opsec-considerations-for-beacon-commands/
+https://www.cobaltstrike.com/blog/opsec-considerations-for-beacon-commands
 https://www.cobaltstrike.com/help-sleep-mask-kit
 ```
 SANS DFIR Normal Parent process tree examples:

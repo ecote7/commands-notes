@@ -15,6 +15,15 @@ ldapsearch "(&(&(&(&(samAccountType=805306369)(!(primaryGroupId=516)))(objectCat
 Extracts ASR Rules - See (https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference?view=o365-worldwide#asr-rule-to-guid-matrix)
 ```
 reg_query HKLM "SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\ASR\Rules"
+
+# If Intune or MDM managed:
+reg_query HKLM "SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager" ASRRules
+
+# Legend
+0 = Disabled
+1 = Enabled
+2 = Audit Mode
+6 = Warn Mode
 ```
 Locate SysMon configuration file loaded (default registry key)
 ```

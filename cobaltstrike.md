@@ -12,9 +12,16 @@ Search for all enabled Windows Server 2008 that their lastlogon is >= to '2024-0
 ```
 ldapsearch "(&(&(&(&(samAccountType=805306369)(!(primaryGroupId=516)))(objectCategory=computer)(operatingSystem=Windows Server 2008*)(!userAccountControl:1.2.840.113556.1.4.803:=2)(lastlogon>=133513510232969784))))" sAMAccountName,lastlogon
 ```
-Search for all GPOs using Sekken-Enum BOF (ADWS instead of LDAP):
+Search for GPOs, OUs, Computers, Users, Trusts, Containers, Groups individually using Sekken-Enum BOF (uses ADWS instead of LDAP protocol):
+Source : https://github.com/Nomad0x7/sekken-enum/tree/main
 ```
-sekken-enum dc01.goat.local "(objectCategory=groupPolicyContainer)"
+sekken-enum dc01.domain.local "(objectCategory=groupPolicyContainer)"
+sekken-enum dc01.domain.local "(objectCategory=organizationalUnit)"
+sekken-enum dc01.domain.local "(objectclass=computer)"
+sekken-enum dc01.domain.local "(&(objectCategory=person)(objectClass=user))"
+sekken-enum dc01.domain.local "(objectClass=trustedDomain)"
+sekken-enum dc01.domain.local "(objectClass=container)"
+sekken-enum dc01.domain.local "(objectCategory=group)"
 ```
 Extracts ASR Rules - See (https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference?view=o365-worldwide#asr-rule-to-guid-matrix)
 ```
